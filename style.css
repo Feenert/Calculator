@@ -1,0 +1,70 @@
+body{
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+#base, #screen, .btn{
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+#base {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: grey;
+}
+
+#screen{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 10px;
+    height: 100px;
+}
+
+#btns{
+    display: grid;
+    height: 400px;
+    grid-template-columns: repeat(4, 95px);
+    padding: 10px;
+}
+
+.btn{
+    margin: 5px;
+}
+
+#equals{
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    background-color: green;
+
+}
+
+#plus{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+#zero{
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+#delete{
+    background-color: red;
+}
+
+#topNumber, #bottomNumber{
+    font-size: 36px;
+}
